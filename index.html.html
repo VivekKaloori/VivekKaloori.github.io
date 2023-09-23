@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>SpaceXForm</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        <style>
+            fieldset{
+                border-radius: 0.2cm;
+                border-color: aliceblue;
+                box-shadow: 5px 5px 5px darkturquoise;
+            }
+            form{
+                display: inline-block;
+            }
+            .Option{
+                margin-top: 0.5cm;
+            }
+            .stuff{
+                margin-left: 39%;
+                margin-top: 9%;
+            }
+            
+            .container{
+                display: flex;
+                gap: 3cm;
+                margin-top: 5px;
+                margin-right: 50%;
+            }
+            
+            
+            body{
+                background-image: url("./dark_space.jpeg");
+                color: white;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            h1{
+                text-align: center;
+                font-size: 2cm;
+                font-family: 'Orbitron', sans-serif;
+                font-weight: 400;
+                transition: 0.5s;
+            }
+            h1: :hover{
+                -webkit-text-stroke: 2px white;
+                color: transparent;
+            }
+            ul{
+                display: flex;
+                gap:50px;
+                align-items: center;
+                padding: 15px;
+                list-style: none;
+                justify-content:center;
+            }
+            a{
+                color: white;
+            }
+            div a{
+                color: white;
+            }
+            input{
+            background-color: transparent;
+            border-radius: 1px;
+            border:1px solid white;
+        }
+        @media(max-width:14cm){
+            body{
+                background-size: cover;
+                background-color: black;
+            }
+            ul{
+                display: flex;
+                gap:15px;
+                align-items:center;
+                padding: 15px 30%;
+                list-style: none;
+                justify-content:center;
+            }
+            .stuff{
+                justify-content: center;
+                margin-left: 23%;
+                margin-top: 9%;
+            }
+            fieldset{
+                border-radius: 0.2cm;
+                border-color: aliceblue;
+                box-shadow: 0px 5px 5px darkturquoise;
+            
+            }
+        }
+        </style>
+        <body>
+           <ul>
+            <li class="#"><a href="https://www.spacex.com/" target="_blank">HOME</a></li>
+            <li class="#"><a href="https://www.spacex.com/vehicles/falcon-9/" target="_blank">FALCON9</a></li>
+            <li class="#"><a href="https://www.spacex.com/starshield/" target="_blank">STARSHIELD</a></li>
+            <li class="#"><a href="https://www.starlink.com/" target="_blank">STARLINK</a></li>
+            <li class="#"><a href="https://www.spacex.com/vehicles/starship/" target="_blank">STARSHIP</a></li>
+           </ul>
+            <h1 style="text-shadow: 0px 5px 5px darkturquoise;">Space <span style="color:darkturquoise;text-shadow: 0px 5px 5px white;">X</span></h1>
+            <div class="stuff">
+            <form action="mailto:125003406@sastra.ac.in" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Login</legend>
+                <table>
+                <tr height="40px">
+                    <td><label>Name:</label></td>
+                <td><input type="text" name="Name" style="color: white;"><br></td>
+                </tr>
+                <tr height="40px">
+                <td><label>Password:</label></td>
+                <td><input type="password" name="Password" style="color: white;"><br></td>
+            </tr>
+        </table>
+                <!--<p>Name:    <input type="text" name="Name"></p>
+                <p>Password: <input type="password" name="Password"></p>-->
+                <center><input type="submit" name="Log in" style="color: white;"></center>
+
+            </fieldset>
+        </form>
+        <div class="container">
+        <a class="Option" href="./FormSignup.html" target="_blank">Forgot Password?</a>
+        <a class="Option" href="./SignUpForm.html" target="_blank">Sign Up</a>
+        </div>
+    </div>
+        </body>
+    </head>
